@@ -6,14 +6,14 @@ import Foundation
 // deterministic Swift before being shown or persisted. The AI never edits
 // targets, inventory, or schedules directly.
 
-public struct AIResearchResponse: Codable, Equatable {
+public struct AIResearchResponse: Codable, Equatable, Sendable {
     public var food: String
     public var per100g: NutritionFacts
     public var notes: String?
 }
 
-public struct AISuggestionResponse: Codable, Equatable {
-    public struct Suggestion: Codable, Equatable {
+public struct AISuggestionResponse: Codable, Equatable, Sendable {
+    public struct Suggestion: Codable, Equatable, Sendable {
         public var name: String
         public var rationale: String
         public var ingredients: [String]  // free text; planner re-parses
@@ -22,8 +22,8 @@ public struct AISuggestionResponse: Codable, Equatable {
     public var suggestions: [Suggestion]
 }
 
-public struct AISubstitutionResponse: Codable, Equatable {
-    public struct Sub: Codable, Equatable {
+public struct AISubstitutionResponse: Codable, Equatable, Sendable {
+    public struct Sub: Codable, Equatable, Sendable {
         public var original: String
         public var replacement: String
         public var ratio: Double
@@ -32,7 +32,7 @@ public struct AISubstitutionResponse: Codable, Equatable {
     public var substitutions: [Sub]
 }
 
-public struct AIPreferenceParseResponse: Codable, Equatable {
+public struct AIPreferenceParseResponse: Codable, Equatable, Sendable {
     public var preferredProteins: [String]
     public var avoidedFoods: [String]
     public var legumes: [String]

@@ -6,13 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXFileReference section */
+		AA0000000000000000000040 /* NutritionTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AA0000000000000000000001 /* NutritionTracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
 			path = NutritionTracker;
 			sourceTree = "<group>";
 		};
@@ -303,10 +303,6 @@
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
-
-/* Begin PBXFileReference section */
-		AA0000000000000000000040 /* NutritionTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
 
 /* Begin XCConfigurationList section */
 		AA0000000000000000000070 /* Build configuration list for PBXNativeTarget "NutritionTracker" */ = {
